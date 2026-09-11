@@ -1,4 +1,5 @@
 from demo_semaforo import ejecutar_demo
+from demo_monitor import ejecutar_demo_monitor
 
 
 def main():
@@ -16,7 +17,7 @@ def main():
             ejecutar_demo()
 
         elif opcion == "2":
-            print("Monitor pendiente de implementación")
+            ejecutar_demo_monitor()
 
         elif opcion == "0":
             print("Programa finalizado.")

@@ -6,15 +6,14 @@ espacios = threading.Semaphore(3)
 
 
 def carro(numero):
+
     print(f"Carro {numero} intenta entrar")
 
     espacios.acquire()
 
     try:
         print(f"Carro {numero} entró al estacionamiento")
-
         time.sleep(2)
-
         print(f"Carro {numero} salió del estacionamiento")
 
     finally:
